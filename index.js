@@ -26,7 +26,7 @@ let getLinks = html => {
 			.catch(err => console.log(err));
 	}
 };
-
+let finalData = [];
 let getData = (html, category) => {
 	data = [];
 	const $ = cheerio.load(html);
@@ -50,8 +50,8 @@ let getData = (html, category) => {
 	writeToFile(category, JSON.stringify(data));
 };
 
-let writeToFile = (category, data) => {
-	fs.writeFile('' + category + '.json', data, function(err) {
+let writeToFile = (pre, data) => {
+	fs.writeFile('./scrapedata/' + pre + '.json', data, function(err) {
 		if (err) {
 			console.log(err);
 		}
