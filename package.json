@@ -1,0 +1,12 @@
+{
+  "name": "amazonScraper",
+  "version": "1.0.0",
+  "description": "Amazon bestseller scraper",
+  "main": "index.js",
+  "author": "ashish kumar singh",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
